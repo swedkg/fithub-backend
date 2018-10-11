@@ -78,12 +78,11 @@
     {
       "id": 6,
       "title": "now we save again",
-      "date": 1566298802000,
-      "duration": 66,
+      "date": 1530442800000,
+      "duration": -3532000,
       "comment": "neque pellentesque massa lobortis ultrices.",
       "type": "9",
-      "user": 4,
-      "filterDate": "Aug 20, 2019 13:0"
+      "user": 4
     },
     {
       "id": 7,
@@ -115,12 +114,11 @@
     {
       "id": 10,
       "title": "edit another one",
-      "date": 1523301470000,
-      "duration": 72,
+      "date": 1523215020000,
+      "duration": 187000,
       "comment": "Donec tempus, lorem fringilla ornare placerat, orci",
       "type": 9,
-      "user": 4,
-      "filterDate": "Apr 9, 2018 21:17"
+      "user": 4
     },
     {
       "id": 11,
@@ -134,21 +132,21 @@
     {
       "id": 14,
       "title": "we just edited this",
-      "date": 1529475120000,
-      "duration": 86,
+      "date": 1528870320000,
+      "duration": -3567000,
       "comment": "we also count",
       "type": "9",
-      "user": 4,
-      "filterDate": "2018-06-20T06:12:00.000Z"
+      "user": 4
     },
     {
       "id": 15,
       "title": "tincidunt pede ac urna.",
       "date": 1517660699000,
-      "duration": 79,
+      "duration": -3053000,
       "comment": "convallis erat, eget tincidunt dui augue eu",
       "type": 5,
-      "user": 4
+      "user": 4,
+      "filterDate": "3 Feb, 2018 13:24"
     },
     {
       "id": 16,
@@ -163,10 +161,11 @@
       "id": 17,
       "title": "mauris a nunc.",
       "date": 1531265149000,
-      "duration": 67,
+      "duration": 40394000,
       "comment": "velit",
       "type": 5,
-      "user": 4
+      "user": 4,
+      "filterDate": "11 Jul, 2018 1:25"
     },
     {
       "id": 19,
@@ -206,12 +205,13 @@
     },
     {
       "id": 23,
-      "title": "Nulla",
-      "date": 1525176598000,
-      "duration": 8,
-      "comment": "sollicitudin a, malesuada id, erat. Etiam",
-      "type": 12,
-      "user": 4
+      "title": "this one should be ok",
+      "date": 1525781340000,
+      "duration": 76020000,
+      "comment": "testing dates",
+      "type": "1",
+      "user": 4,
+      "filterDate": "8 May, 2018 14:09"
     },
     {
       "id": 24,
