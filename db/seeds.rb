@@ -39,6 +39,32 @@
 
 json = ActiveSupport::JSON.decode(File.read('db.json'))
 
-json["activities_types"].each do |a|
-  Country.create!(a['country'], without_protection: true)
+json["activities_logs"].each do |a|
+  Activity.create(
+    {
+      "id": a["id"],
+      "title": a["title"],
+      "date": a["date"],
+      "duration": a["duration"],
+      "comment": a["comment"],
+      "activity_type_id": a["activity_type_id"],
+      "user_id": a["user_id"]
+    }
+  )
+
+    #   {
+    #   "id": 1,
+    #   "title": "mauris, rhoncus",
+    #   "date": 1541918393000,
+    #   "duration": 54,
+    #   "comment": "auctor quis,",
+    #   "activity_type_id": 12,
+    #   "user_id": 1
+    # },
+
+  # type.label = a["label"]
+  # type.label = "label"
+  # type.save
+  # puts a["label"]
+  # puts type
 end

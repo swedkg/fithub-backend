@@ -6,7 +6,7 @@ class V1::Users::SessionsController < Devise::SessionsController
   def create
     user = warden.authenticate!(auth_options)
     token = Tiddle.create_and_return_token(user, request, expires_in: 1.day)
-    render json: { authentication_token: token }
+    render json: { authentication_token: token, user: user }
   end
 
   def destroy

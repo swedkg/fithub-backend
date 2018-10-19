@@ -10,22 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_09_184551) do
+ActiveRecord::Schema.define(version: 2018_10_16_173658) do
 
   create_table "activities", force: :cascade do |t|
-    t.string "name"
-    t.date "date"
-    t.time "duration"
+    t.string "title"
+    t.integer "date"
+    t.integer "duration"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "user_id"
+    t.integer "activity_type_id"
+    t.string "comment"
+    t.index ["activity_type_id"], name: "index_activities_on_activity_type_id"
     t.index ["user_id"], name: "index_activities_on_user_id"
   end
 
   create_table "activity_types", force: :cascade do |t|
     t.string "label"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "authentication_tokens", force: :cascade do |t|
