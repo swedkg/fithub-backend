@@ -27,7 +27,9 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 
 gem 'devise'
-gem 'tiddle' 
+gem 'tiddle'
+
+gem 'will_paginate', '~> 3.1.1'
 
 gem 'rack-cors', require: 'rack/cors'
 

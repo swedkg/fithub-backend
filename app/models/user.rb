@@ -8,4 +8,6 @@ class User < ApplicationRecord
   has_many :authentication_tokens
   has_many :activities
 
+  validates :email, uniqueness: true
+  validates :email, presence: true
 end
