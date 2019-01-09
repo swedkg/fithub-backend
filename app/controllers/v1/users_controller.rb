@@ -6,15 +6,12 @@ class V1::UsersController < ApplicationController
     if @user.save
       head(:ok)
     else
-      # puts @user.errors
       render json: @user.errors.messages, status: :created
-      # head(:no_content)
     end
     # end
   end
 
   def update
-    # result = update_resource(current_user, params)
     @user = current_user
     puts @user
   end
